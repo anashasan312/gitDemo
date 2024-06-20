@@ -421,3 +421,29 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit --amend -m " this
  1 file changed, 1 insertion(+)
  create mode 100644 text3.txt
 ```
+### notes
+### Adding a Note
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes add -m "Your note message"
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes show
+Your note message
+```
+
+### Appending to an Existing Note
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes append -m "Additional note message"
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes show
+Your note message
+
+Additional note message
+```
+
+### Removing a Note
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes remove
+Removing note for object HEAD
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git notes show
+error: no note found for object 8f17bc100b93f0769457ca9cc70e4e13229da02f.
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo>
+```
+
