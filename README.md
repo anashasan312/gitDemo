@@ -177,6 +177,27 @@ index 8697722..827f6b2 100644
 (1/1) Stage this hunk [y,n,q,a,d,e,?]? y
 ```
 
-### -v / --verbose flag
-Shows files as they are being added to the staging area.
+### -i / --interactive:
+Opens an interactive prompt where you can choose which changes to stage.
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add -i        
+           staged     unstaged path
+  1:      +182/-1      nothing README.md
+  2:        +1/-0      nothing text1.txt
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now> 
+
+```
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for add commands"
+[main 9cb6e9b]  commit for add commands
+ 2 files changed, 183 insertions(+), 1 deletion(-)
+ create mode 100644 text1.txt
+
+```
 
