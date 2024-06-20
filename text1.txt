@@ -5,3 +5,5 @@ for working status command
 for diff command 
 
 commit1
+
+commit 2
