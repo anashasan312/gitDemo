@@ -399,4 +399,25 @@ index 9c5f7d9..0a2c6c0 100644
 
  ```
 
- 
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for diff command"
+[main 0db6024]  commit for diff command
+ 1 file changed, 28 insertions(+)
+```
+
+### commit 
+### -m / --message
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for showing message commit" 
+[main f87ad01]  commit for showing message commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text3.txt
+ ```
+ ### --amend
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit --amend -m " this i amend commit"
+[main 383d37c]  this i amend commit
+ Date: Fri Jun 21 02:38:18 2024 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text3.txt
+```
