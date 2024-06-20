@@ -372,3 +372,31 @@ index 3da8c39..7ae7c2a 100644
 
 ### Compare Working Directory with Last Commit
 
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git diff ba76506 6c50503
+diff --git a/text1.txt b/text1.txt
+index 5e13d8d..7bfc4be 100644
+--- a/text1.txt
++++ b/text1.txt
+@@ -5,3 +5,5 @@ for working status command
+ for diff command
+
+ commit1
++
+```
+
+### Compare Specific File or Directory
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git diff README.md
+diff --git a/README.md b/README.md
+index 9c5f7d9..0a2c6c0 100644
+--- a/README.md
++++ b/README.md
+@@ -372,3 +372,15 @@ index 3da8c39..7ae7c2a 100644
+ 
+ ### Compare Working Directory with Last Commit
+
+ ```
+
+ 
