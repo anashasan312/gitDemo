@@ -447,3 +447,29 @@ error: no note found for object 8f17bc100b93f0769457ca9cc70e4e13229da02f.
 PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo>
 ```
 
+### rm
+This command removes the specified file from both the working directory and the staging area.
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git rm text4.txt
+rm 'text4.txt'
+```
+
+### Remove Cached File
+This command removes the specified file from the staging area but leaves it in the working directory. This is useful when you want to stop tracking a file without deleting it from your working directory.
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git rm --cached text4.txt
+rm 'text4.txt'
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        deleted:    text4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text4.txt
+```
