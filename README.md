@@ -473,3 +473,24 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         text4.txt
 ```
+
+### Create a New Branch
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
+* main
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout -b feature1
+Switched to a new branch 'feature1'
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout -b feature2
+Switched to a new branch 'feature2'
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout -b feature3
+Switched to a new branch 'feature3'
+```
+
+### List All Branches
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
+  feature1
+  feature2
+* feature3
+  main
+  ```
