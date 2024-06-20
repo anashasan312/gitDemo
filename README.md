@@ -245,4 +245,130 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m "commit for ad
 
 The git status command is used to display the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. 
 
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   text1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for status command"
+[main 1195329]  commit for status command
+ 2 files changed, 64 insertions(+), 1 deletion(-)
+ ```
+
+ ### Compare Working Directory with Staging Area
+ git diff
+
+ ```
+ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git diff
+diff --git a/README.md b/README.md
+index 3da8c39..9ecee2a 100644
+--- a/README.md
++++ b/README.md
+@@ -245,4 +245,26 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m "commit for ad
+
+ The git status command is used to display the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+
++```
++PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
++On branch main
++Your branch is ahead of 'origin/main' by 2 commits.
++  (use "git push" to publish your local commits)
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   README.md
++        modified:   text1.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++```
++
++```
++PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for status command"
++[main 1195329]  commit for status command
++ 2 files changed, 64 insertions(+), 1 deletion(-)
++ ```
+
++ ### Compare Working Directory with Staging Area
+\ No newline at end of file
+diff --git a/text1.txt b/text1.txt
+index 97a764c..cf4cf9b 100644
+--- a/text1.txt
++++ b/text1.txt
+@@ -1,19 +1,4 @@
+ for git flag -u
+
+ for working status command
+-```
+-PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+-On branch main
+-Your branch is ahead of 'origin/main' by 2 commits.
+-  (use "git push" to publish your local commits)
+-
+-Changes not staged for commit:
+-  (use "git add <file>..." to update what will be committed)
+-  (use "git restore <file>..." to discard changes in working directory)
+-        modified:   README.md
+-        modified:   text1.txt
+-
+-no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+### Compare Staging Area with Last Commit
+
+git diff --cached
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git diff --cached
+diff --git a/README.md b/README.md
+index 3da8c39..7ae7c2a 100644
+--- a/README.md
++++ b/README.md
+@@ -245,4 +245,84 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m "commit for ad
+ 
+ The git status command is used to display the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. 
+ 
++```
++PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
++On branch main
++Your branch is ahead of 'origin/main' by 2 commits.
++  (use "git push" to publish your local commits)
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   README.md
++        modified:   text1.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++```
++
++```
++PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for status command"
++[main 1195329]  commit for status command
++ 2 files changed, 64 insertions(+), 1 deletion(-)
++ ```
++
++ ### Compare Working Directory with Staging Area
++ git diff
++
++ ```
++ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git diff
++diff --git a/README.md b/README.md
+```
+
+### Compare Working Directory with Last Commit
 
