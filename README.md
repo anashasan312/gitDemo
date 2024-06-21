@@ -857,7 +857,12 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git shortlog -s
     37  anas
      5  anashasan312
 ```
-
+### describe
+The git describe command is used to create a human-readable name for a given commit based on the nearest tag in its history.
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git describe
+tag3-10-g3e4e654
+```
 
 
 
