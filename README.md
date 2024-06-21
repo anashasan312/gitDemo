@@ -698,3 +698,38 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
 
 ### tag command
 The git tag command is used to create, list, delete, and verify tags in Git. Tags are useful for marking specific points in your repository's history, such as releases.
+
+
+### git worktree command
+The git worktree command allows you to manage multiple working directories attached to a single Git repository. This can be useful when you need to work on different branches simultaneously without having to switch back and forth within the same directory.
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git worktree add ../w1 feature1
+Preparing worktree (checking out 'feature1')
+HEAD is now at 6e110ce  for switch
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git worktree list
+C:/Users/mohda/OneDrive/Desktop/gitdemo/gitDemo  c066852 [main]
+C:/Users/mohda/OneDrive/Desktop/gitdemo/w1       6e110ce [feature1]
+C:/Users/mohda/OneDrive/Desktop/gitdemo/w2       657a44b [feature2]
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git worktree remove ../w2         
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git worktree list
+C:/Users/mohda/OneDrive/Desktop/gitdemo/gitDemo  c066852 [main]
+C:/Users/mohda/OneDrive/Desktop/gitdemo/w1       6e110ce [feature1]
+
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md  
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit " commit for completing worktree"
+error: pathspec ' commit for completing worktree' did not match any file(s) known to git
+```
+
+### fetch
