@@ -562,3 +562,6 @@ Date:   Fri Jun 21 11:12:40 2024 +0530
 
      merging feature2 into main
 ```
+
+### stash command with message
+
