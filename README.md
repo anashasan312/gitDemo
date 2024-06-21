@@ -475,6 +475,7 @@ Untracked files:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Create a New Branch
 ```
 PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
@@ -531,6 +532,11 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 ```
 
 
+=======
+
+
+### cureently in second branch name feature2
+>>>>>>> feature2
 
 ### merging command switch
 
