@@ -496,5 +496,6 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
   ```
 
 ### Switching Branches
+```
 
 
