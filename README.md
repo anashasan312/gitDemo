@@ -475,4 +475,8 @@ Untracked files:
 ```
 
 
+
 ### cureently in second branch name feature2
+
+### merging command switch
+
