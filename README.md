@@ -737,4 +737,8 @@ error: pathspec ' commit for completing worktree' did not match any file(s) know
 
 ### for fetch command
 ### for fetch second time
+<<<<<<< HEAD
 
+=======
+### for clear pull 
+>>>>>>> d67c584943670f9de1e609e0467a3aae0924668f
