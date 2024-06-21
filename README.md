@@ -494,3 +494,7 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 * feature3
   main
   ```
+
+### Switching Branches
+
+
