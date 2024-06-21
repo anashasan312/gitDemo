@@ -544,3 +544,21 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 ### log command
 The git log command is used to view the commit history in a Git repository. It is a powerful tool with many options to customize the output and make it easier to navigate and understand the commit history. Here are some important options and examples to help you make the most of git log.
 
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for log command"
+[main 73bf4b4]  commit for log command
+ 1 file changed, 4 insertions(+)
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git log
+commit 73bf4b47710d86b7f2b052efcac2aa2dce446859 (HEAD -> main)
+Author: anas <anashasan251309@gmail.com>
+Date:   Fri Jun 21 11:23:43 2024 +0530
+
+     commit for log command
+
+commit 6ba2dedb59e3019b26423b15034599f6abfbeed2 (origin/main, origin/HEAD)
+Merge: d2628d0 657a44b
+Author: anas <anashasan251309@gmail.com>
+Date:   Fri Jun 21 11:12:40 2024 +0530
+
+     merging feature2 into main
+```
