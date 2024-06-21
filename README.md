@@ -508,4 +508,23 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
   feature2
   main
 ```
-
+### delete 
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout -b feature3
+Switched to a new branch 'feature3'
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout main
+Switched to branch 'main'
+M       README.md
+Your branch is up to date with 'origin/main'.
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
+  feature1
+  feature2
+  feature3
+* main
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch -d feature3
+Deleted branch feature3 (was ce7a59e).
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
+  feature1
+  feature2
+* main
+```
