@@ -790,6 +790,75 @@ index 5f99399,3e49815..8e60f89
 +++ b/README.md
 @@@ -474,59 -474,4 +474,63 @@@ Untracked files
 ```
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md   
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commit for show command"
+[main 1fe6367]  commit for show command
+ 1 file changed, 54 insertions(+), 3 deletions(-)
+ ```
+
+### shortlog command
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git shortlog -n
+anas (37):
+      commit for add commands
+      commit for add command
+      commit for status command
+      for diff command for commit 1 andcommit 2
+      for diff command for commit 1 and commit 2
+      commit for diff command
+      this i amend commit
+      revise
+      for notes
+      for restoring process
+      for removing command
+      commit for branch
+      just for flow
+      just check
+      just check
+      commit for switching branches
+      deleting branch
+      just flow
+      for switching
+      for merging
+      just check
+      for switch
+      commit for adding something in feature2
+      for merging check
+      merging feature1 into main
+      merging feature2 into main
+      commit for log command
+      commiting log command
+      commiting for stash adding and deleting
+      troubleshooting remove in stash deleting
+      stash
+      commit stash command once
+      commit for tag command
+      commit for fetch
+      fetch
+      fetch and pull
+      commit for show command
+
+anashasan312 (5):
+      Initial commit
+      Update README.md
+      Update README.md
+      Update README.md
+      Update README.md
+```
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git shortlog -e
+anas <
+anashasan251309@gmail.com> (37):
+```
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git shortlog -s
+    37  anas
+     5  anashasan312
+```
+
+
 
 
 
