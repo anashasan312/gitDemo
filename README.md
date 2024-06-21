@@ -869,3 +869,19 @@ tag3-10-g3e4e654
 
 
 ### using feature3
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git rebase feature3    
+Successfully rebased and updated refs/heads/main.
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+```
+
+### testing rebse 
+
