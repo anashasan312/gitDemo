@@ -540,3 +540,7 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 
 ### merging command switch
 
+
+### log command
+The git log command is used to view the commit history in a Git repository. It is a powerful tool with many options to customize the output and make it easier to navigate and understand the commit history. Here are some important options and examples to help you make the most of git log.
+
