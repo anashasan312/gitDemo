@@ -737,8 +737,59 @@ error: pathspec ' commit for completing worktree' did not match any file(s) know
 
 ### for fetch command
 ### for fetch second time
-<<<<<<< HEAD
 
-=======
+
 ### for clear pull 
->>>>>>> d67c584943670f9de1e609e0467a3aae0924668f
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md  
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " fetch"
+[main 4dfac62]  fetch
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git pull origin main
+From https://github.com/anashasan312/gitDemo
+ * branch            main       -> FETCH_HEAD
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md     
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " fetch and pull"
+[main 0c7a30f]  fetch and pull
+```
+
+### remote and submodule
+
+### show
+To display the details of the most recent commit:
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git show
+commit 0c7a30f929969d0018c880068f760b66ad94d574 (HEAD -> main, origin/main, origin/HEAD)
+Merge: 4dfac62 d67c584
+Author: anas <anashasan251309@gmail.com>
+Date:   Fri Jun 21 15:08:45 2024 +0530
+
+     fetch and pull
+
+diff --cc README.md
+index 6efd481,0869ee5..5907781
+--- a/README.md
++++ b/README.md
+```
+
+### for pecific commit
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git show d2628d0
+commit d2628d04dfdd58567a402c18febd0e0550981392
+Merge: cfd6242 6e110ce
+Author: anas <anashasan251309@gmail.com>
+Date:   Fri Jun 21 11:09:36 2024 +0530
+
+     merging feature1 into main
+
+diff --cc README.md
+index 5f99399,3e49815..8e60f89
+--- a/README.md
++++ b/README.md
+@@@ -474,59 -474,4 +474,63 @@@ Untracked files
+```
+
+
+
