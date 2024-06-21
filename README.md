@@ -700,6 +700,7 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
 The git tag command is used to create, list, delete, and verify tags in Git. Tags are useful for marking specific points in your repository's history, such as releases.
 
 
+<<<<<<< HEAD
 ### git worktree command
 The git worktree command allows you to manage multiple working directories attached to a single Git repository. This can be useful when you need to work on different branches simultaneously without having to switch back and forth within the same directory.
 
@@ -733,3 +734,7 @@ error: pathspec ' commit for completing worktree' did not match any file(s) know
 ```
 
 ### fetch
+
+### for fetch command
+### for fetch second time
+
