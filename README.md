@@ -474,6 +474,7 @@ Untracked files:
         text4.txt
 ```
 
+<<<<<<< HEAD
 ### Create a New Branch
 ```
 PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
@@ -529,4 +530,7 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 * main
 ```
 
+
+
+### merging command switch
 
