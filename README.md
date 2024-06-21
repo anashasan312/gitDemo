@@ -474,4 +474,4 @@ Untracked files:
         text4.txt
 ```
 
-### merging
+### merging command
