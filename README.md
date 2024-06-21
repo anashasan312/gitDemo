@@ -497,5 +497,15 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
 
 ### Switching Branches
 ```
-
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch   
+  feature1
+  feature2
+* main
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git checkout feature1
+Switched to branch 'feature1'
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git branch
+* feature1
+  feature2
+  main
+```
 
