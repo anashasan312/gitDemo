@@ -569,3 +569,129 @@ Date:   Fri Jun 21 11:12:40 2024 +0530
 ### deleting specific stash
 
 ### deleting stash 
+
+```
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash
+Saved working directory and index state WIP on main: b5deff5  commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash -m " stash with message"
+Saved working directory and index state On main:  stash with message
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: On main: stash with message
+stash@{1}: WIP on main: b5deff5 commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash apply
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: WIP on main: b5deff5 commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash
+Saved working directory and index state WIP on main: b5deff5  commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git apply
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md  
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " commiting for stash adding and deleting"
+[main 638f9a8]  commiting for stash adding and deleting
+[main 638f9a8]  commiting for stash adding and deleting
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash apply
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: WIP on main: b5deff5 commiting log command
+stash@{1}: WIP on main: b5deff5 commiting log command
+
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git add README.md  
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git commit -m " troubleshooting remove in stash deleting"
+[main 31cda2b]  troubleshooting remove in stash deleting
+ 1 file changed, 3 insertions(+)
+ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash
+Saved working directory and index state WIP on main: 31cda2b  troubleshooting remove in stash deleting
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: WIP on main: 31cda2b troubleshooting remove in stash deleting
+stash@{1}: WIP on main: b5deff5 commiting log command
+stash@{2}: WIP on main: b5deff5 commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash push -m " deleting stash"
+Saved working directory and index state On main:  deleting stash
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: On main: deleting stash
+stash@{1}: WIP on main: 31cda2b troubleshooting remove in stash deleting
+stash@{2}: WIP on main: b5deff5 commiting log command
+stash@{3}: WIP on main: b5deff5 commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash pop 
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash drop 2        
+Dropped refs/stash@{2} (6b278d6820c1032b3240ff9e5de8977ede10bd0b)
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash drop 3
+fatal: log for 'refs/stash' only has 3 entries
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash drop 0
+Dropped refs/stash@{0} (11c502b1024032cf3cabe10a2bdd0e1ae7c502f0)
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+stash@{0}: WIP on main: 31cda2b troubleshooting remove in stash deleting
+stash@{1}: WIP on main: b5deff5 commiting log command
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash clear
+PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
+
+```
