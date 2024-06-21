@@ -698,3 +698,6 @@ PS C:\Users\mohda\OneDrive\Desktop\gitdemo\gitDemo> git stash list
 
 ### tag command
 The git tag command is used to create, list, delete, and verify tags in Git. Tags are useful for marking specific points in your repository's history, such as releases.
+
+
+### for fetch command
